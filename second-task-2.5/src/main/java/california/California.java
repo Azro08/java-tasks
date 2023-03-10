@@ -32,15 +32,15 @@ public class California {
 
     // test client
     public static void main(String[] args) {
-        Scanner rl = new Scanner(System.in);
-        int n;
-        StdOut.printf("n = ");
-        n = rl.nextInt();
-        String[] candidates = new String[n];
+        Scanner input = new Scanner(System.in);
+        int amount;
+        StdOut.printf("how many names to enter?");
+        amount = input.nextInt();
+        String[] candidates = new String[amount];
         String candidateName;
-        for (int i =0; i < n; i++) {
+        for (int i =0; i < amount; i++) {
             StdOut.printf("name: ");
-            candidateName = rl.next();
+            candidateName = input.next();
             candidates[i] = Arrays.toString(candidateName.toUpperCase().split("\\n+"));
         }
 
