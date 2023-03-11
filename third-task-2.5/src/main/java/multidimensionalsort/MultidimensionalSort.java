@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class MultidimensionalSort {
     private static class VectorSort implements Comparator<int[]> {
-        public int dimension;
+        int dimension;
 
         public VectorSort(int dimension) {
             this.dimension = dimension;
