@@ -43,3 +43,9 @@ RWOO JM VAH BSG ZX NTCIE KUP DYFL
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/third-task-2.5/src/main/java/multidimensionalsort
 3. Время выполнения "план-факт": план - 40 мин; факт - 1 час 30 мин.
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Athird-task-2.5%2Fsrc%2Fmain%2Fjava%2Fmultidimensionalsort%2FMultidimensionalSort.java
+
+### Четвертая задача из раздела 2.5 ###
+1. Задача 2.5.18: 
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/fourth-task-2.5/src/main/java/sortstability
+3. Время выполнения "план-факт": план - 40 мин; факт - 1 час.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afourth-task-2.5%2Fsrc%2Fmain%2Fjava%2Fsortstability%2FSortStability.java
