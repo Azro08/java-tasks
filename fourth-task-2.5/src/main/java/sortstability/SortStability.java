@@ -10,18 +10,17 @@ import java.util.Scanner;
 public class SortStability {
     private static class Wrapper implements Comparable<Wrapper> {
 
-        Comparable keyValue;
+        Comparable<Integer> keyValue;
         int originalIndex;
 
-        Wrapper(Comparable keyValue, int originalIndex) {
+        Wrapper(Comparable<Integer> keyValue, int originalIndex) {
             this.keyValue = keyValue;
             this.originalIndex = originalIndex;
         }
 
         @Override
-        @SuppressWarnings("unchecked")
         public int compareTo(Wrapper that) {
-            int compare = this.keyValue.compareTo(that.keyValue);
+            int compare = this.keyValue.compareTo((Integer) that.keyValue);
 
             //Different keys
             if (compare != 0) {
@@ -31,7 +30,13 @@ public class SortStability {
             //Equal keys
             return Integer.compare(this.originalIndex, that.originalIndex);
         }
+        @Override
+        public boolean equals(Object obj) {
+            return super.equals(obj);
+        }
     }
+
+
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -69,7 +74,7 @@ public class SortStability {
         StdOut.println("Sorted array: " + sortedArray);
     }
 
-    private void sortInAStableWay(Comparable[] array) {
+    private void sortInAStableWay(Comparable<Integer>[] array) {
 
         Wrapper[] wrappedKeys = new Wrapper[array.length];
         int wrappedKeysIndex = 0;
