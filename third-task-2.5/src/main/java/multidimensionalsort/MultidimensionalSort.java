@@ -2,6 +2,7 @@ package multidimensionalsort;
 
 import edu.princeton.cs.introcs.StdOut;
 
+import java.security.SecureRandom;
 import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
@@ -80,7 +81,7 @@ public class MultidimensionalSort {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Random random = new Random();
+        Random random = new SecureRandom();
         StdOut.println("Enter array dimensions [n][m]");
         int n;
         int m;
