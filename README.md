@@ -32,8 +32,14 @@ ____
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afirst-task-2.5%2Fsrc%2Fmain%2Fjava%2Ffrequency%2FSortFrequency.java
 
 ### Вторая задача из раздела 2.5 ###
-1. Задача 2.5.8: Выборы без предпочтений. Чтобы не ущемлять кандидатов, имена которых находятся в конце алфавита, на выборах губернатора Калифорнии в 2003 г. их упорядочили с помощью следующего набора символов:
+1. Задача 2.5.16: Выборы без предпочтений. Чтобы не ущемлять кандидатов, имена которых находятся в конце алфавита, на выборах губернатора Калифорнии в 2003 г. их упорядочили с помощью следующего набора символов:
 RWOO JM VAH BSG ZX NTCIE KUP DYFL
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/second-task-2.5/src/main/java/california
-3. Время выполнения "план-факт": план - 20 мин; факт - 30 мин.
+3. Время выполнения "план-факт": план - 20 мин; факт - 40 мин.
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Asecond-task-2.5%2Fsrc%2Fmain%2Fjava%2Fcalifornia%2FCalifornia.java
+
+### Третья задача из раздела 2.5 ###
+1. Задача 2.5.21: Многомерная сортировка. Напишите тип данных Vector для использования в методах сортировки многомерных векторов, состоящих из л целых чисел. Векторы упорядочиваются по первому компоненту, векторы с одинаковыми первыми компонентами по второму компоненту, с одинаковыми вторыми компонентами - по третьему компоненту и т.д.
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/third-task-2.5/src/main/java/multidimensionalsort
+3. Время выполнения "план-факт": план - 40 мин; факт - 1 час 30 мин.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Athird-task-2.5%2Fsrc%2Fmain%2Fjava%2Fmultidimensionalsort%2FMultidimensionalSort.java
