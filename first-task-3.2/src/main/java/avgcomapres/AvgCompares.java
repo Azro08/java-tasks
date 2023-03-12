@@ -5,11 +5,11 @@ import edu.princeton.cs.introcs.StdOut;
 
 public class AvgCompares {
 
-    private static class BinarySearchTree<Key extends Comparable<Key>, Value>{
+    private static class BinarySearchTree<KEY extends Comparable<KEY>, VALUE>{
 
         private class Node {
-            private final Key key;
-            private Value value;
+            private final KEY key;
+            private VALUE value;
 
             private Node left;
             private Node right;
@@ -17,7 +17,7 @@ public class AvgCompares {
             private int size; //# of nodes in subtree rooted here
             private int totalNumberOfComparesRequired; //number of compares required to reach all nodes in the subtree rooted here
 
-            public Node(Key key, Value value, int size) {
+            public Node(KEY key, VALUE value, int size) {
                 this.key = key;
                 this.value = value;
                 this.size = size;
@@ -68,11 +68,11 @@ public class AvgCompares {
             return node.totalNumberOfComparesRequired;
         }
 
-        public void put(Key key, Value value) {
+        public void put(KEY key, VALUE value) {
             root = put(root, key, value);
         }
 
-        private Node put(Node node, Key key, Value value) {
+        private Node put(Node node, KEY key, VALUE value) {
             if (node == null) {
                 return new Node(key, value, 1);
             }
@@ -142,11 +142,11 @@ public class AvgCompares {
             return node;
         }
 
-        public void delete(Key key) {
+        public void delete(KEY key) {
             root = delete(root, key);
         }
 
-        private Node delete(Node node, Key key) {
+        private Node delete(Node node, KEY key) {
             if (node == null) {
                 return null;
             }
