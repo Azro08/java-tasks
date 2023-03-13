@@ -7,38 +7,24 @@ public class LinkedList<T> {
         //конструктор пустой т.к список мб пустым
     }
 
-    public void add(Node<T> newNode){
-        newNode.next = head;
-        head = newNode;
+    public void addAtStart(Node<T> newNode) {
+        if(head == null) {
+            head = newNode;
+        }
+        else {
+            Node<T> temp = head;
+            head = newNode;
+            head.next = temp;
+        }
     }
 
     public void moveToFront(LinkedList<T> linkedList){
-        /*
-        чтобы выполнить задачу, сначала мы переворачиваем связанный список,
-        а затем удаляем повторяющиеся символы. таким образом, когда мы вводим символ,
-        он идет вперед, и если тот же символ добавляется, он идет первым, а другой будет удален.
-         */
-        reverse(linkedList);
         removeDuplicates(linkedList);
     }
 
-    public void reverse (LinkedList<T> ls)
-    {
-        Node<T> previous = null;
-        Node<T> current = ls.head;
-        Node<T> next;
-        while (current != null) {
-            next = current.next;
-            current.next = previous;
-            previous = current;
-            current = next;
-        }
-        ls.head = previous;
-    }
-
     public void removeDuplicates(LinkedList<T> ls){
-        Node<T> ptr1 = null;
-        Node <T> ptr2 = null;
+        Node<T> ptr1;
+        Node <T> ptr2;
         ptr1 = ls.head;
         while (ptr1 != null && ptr1.next != null) {
             ptr2 = ptr1;

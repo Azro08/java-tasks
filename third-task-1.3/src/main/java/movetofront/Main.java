@@ -19,7 +19,7 @@ public class Main {
         for (int i = 0; i < amount; i++){
             log.debug("символ = ");
             a = rl.next().charAt(0);
-            linkedList.add(new Node<>(a, null));
+            linkedList.addAtStart(new Node<>(a, null));
         }
 
 
