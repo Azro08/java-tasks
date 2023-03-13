@@ -5,7 +5,9 @@ public class BinarySearchTree<T extends Comparable<T>> {
     private class Node {
         private final T value;
 
-        private Node left, right;
+        private Node left;
+        private Node right;
+
         private int size;
         public Node(T value, int size) {
             this.value = value;
