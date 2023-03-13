@@ -16,8 +16,8 @@ public class California {
         public int compare(String a, String b) {
             if (Objects.equals(a, b))
                 return 0;
-            int n = Math.min(a.length(), b.length());
-            for (int i = 0; i < n; i++) {
+            int minName = Math.min(a.length(), b.length());
+            for (int i = 0; i < minName; i++) {
                 String order = "RWQOJMVAHBSGZXNTCIEKUPDYFL";
                 int aindex = order.indexOf(a.charAt(i));
                 int bindex = order.indexOf(b.charAt(i));
@@ -38,10 +38,11 @@ public class California {
         amount = input.nextInt();
         String[] candidates = new String[amount];
         String candidateName;
+        input.nextLine();
         for (int i =0; i < amount; i++) {
             StdOut.printf("name: ");
-            candidateName = input.next();
-            candidates[i] = Arrays.toString(candidateName.toUpperCase().split("\\n+"));
+            candidateName = input.nextLine();
+            candidates[i] = candidateName.substring(0, 1).toUpperCase() + candidateName.substring(1);
         }
 
         Arrays.sort(candidates, California.CANDIDATE_ORDER);

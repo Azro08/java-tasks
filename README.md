@@ -49,3 +49,11 @@ RWOO JM VAH BSG ZX NTCIE KUP DYFL
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/fourth-task-2.5/src/main/java/sortstability
 3. Время выполнения "план-факт": план - 40 мин; факт - 1 час.
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afourth-task-2.5%2Fsrc%2Fmain%2Fjava%2Fsortstability%2FSortStability.java
+
+____
+
+### Первая задача из раздела 2.3 ###
+1. Задача 2.3.7: Добавьте в класс BST рекурсивный метод avgCompares() для вычисления среднего количества сравнений, необходимых для случайного попадания в заданном ДБП (длина внутреннего пути дерева, деленная на его размер, плюс один). Разработайте две реализации: рекурсивный метод (требующий линейного времени и объема памяти, пропорционального высоте дерева) и метод вроде size(), ДЛЯ работы которого нужно дополнительное поле в каждом узле дерева (требующий линейного объема памяти и константного времени на запрос).
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/first-task-3.2/src/main/java/avgcomapres
+3. Время выполнения "план-факт": план - 2 часа; факт - 5 часов.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afirst-task-3.2%2Fsrc%2Fmain%2Fjava%2Favgcomapres%2FAvgCompares.java

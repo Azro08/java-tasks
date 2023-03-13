@@ -1,12 +1,10 @@
 package frequency;
 
-import org.apache.log4j.Logger;
+import edu.princeton.cs.introcs.StdOut;
 
 import java.util.*;
 
 public class SortFrequency {
-
-    private static Logger log = Logger.getLogger(SortFrequency.class.getName());
     static class Frequency {
         int freq;
         String word;
@@ -43,23 +41,23 @@ public class SortFrequency {
 
         records.sort(Comparator.comparingInt(o -> o.freq));
 
-        log.debug("Слова, отсортированные по частоте: ");
+        StdOut.println("Слова, отсортированные по частоте: ");
         for (int i = records.size() - 1; i >= 0; i--) {
-            log.debug(records.get(i));
+            StdOut.println(records.get(i));
         }
     }
 
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        log.debug("Введите размер массива: ");
+        StdOut.println("Введите размер массива: ");
         int size = input.nextInt();
         String[] str = new String[size];
 
-        log.debug("Введите слова: ");
+        StdOut.println("Введите слова: ");
         input.nextLine();
         for (int i = 0; i < size; i++)
-            str[i] = input.next();
+            str[i] = input.nextLine();
 
         sortFrequency(str,size);
     }
