@@ -12,7 +12,8 @@ public class RedBlackBST<T extends Comparable<T>, V> {
     private class Node {
         T key;
         V value;
-        Node left, right;
+        Node left;
+        Node right;
         boolean color;
 
         public Node(T key, V value, boolean color) {
