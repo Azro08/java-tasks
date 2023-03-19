@@ -75,3 +75,11 @@ ____
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/fourth-task-3.2/src/main/java/binarytree
 3. Время выполнения "план-факт": план - 1 час; факт - 1 час.
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afourth-task-3.2%2Fsrc%2Fmain%2Fjava%2Fbinarytree
+
+____
+
+### Первая задача из раздела 3.3 ###
+1. Задача 3.3.33: Проверка. Добавьте в класс RedBlackBST метод іs23() для выполнения проверки, что ни у одного узла нет двух красных ссылок и нет правых красных ссылок, и метод isBalanced() для выполнения проверки, что все пути от корня к нулевым ссылкам содержат одинаковое количество черных ссылок. Объедините эти методы с кодом iSBST() из упражнения 3.2.32, чтобы получить метод isRedBlackBST(), который проверяет, что дерево является красно-черным деревом бинарного поиска.
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/first-task-3.3/src/main/java/redblackbst
+3. Время выполнения "план-факт": план - 4 часа; факт - 8 часов.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afirst-task-3.3%2Fsrc%2Fmain%2Fjava%2Fredblackbst
