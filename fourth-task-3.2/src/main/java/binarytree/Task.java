@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class Task {
     private static final Scanner input = new Scanner(System.in);
     private static final Random random = new SecureRandom();
     private static final BinaryTree<Integer> binaryTree = new BinaryTree<>();
