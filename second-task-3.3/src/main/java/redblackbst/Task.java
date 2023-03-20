@@ -47,7 +47,7 @@ public class Task {
         StdOut.println("\nEnter a key to get: ");
         key = input.nextInt();
         if (redBlackBST.contains(key)){
-            redBlackBST.get(key);
+            redBlackBST.get(redBlackBST.root, key);
             StdOut.println("Last accessed node: " + redBlackBST.getLastAccessedNodeValue());
         }
         else {

@@ -5,7 +5,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class RedBlackBST<K extends Comparable<K>, V> {
     private static final boolean RED = true;
     private static final boolean BLACK = false;
-    private Node root;
+    public Node root;
     private Node lastAccessedNode;
     private class Node {
         K key;
@@ -22,19 +22,19 @@ public class RedBlackBST<K extends Comparable<K>, V> {
     }
 
     public boolean contains(K key) {
-        return get(key) != null;
+        return get(root, key) != null;
     }
-    public V get(K key) {
+    public V get(Node node, K key) {
         if (lastAccessedNode != null && key.compareTo(lastAccessedNode.key) == 0) {
             return lastAccessedNode.value;
         }
-        Node node = root;
         while (node != null) {
-            int cmp = key.compareTo(node.key);
-            if (cmp < 0) node = node.left;
-            else if (cmp > 0) node = node.right;
+            int compare;
+            compare = key.compareTo(node.key);
+            if (compare < 0) node = node.left;
+            else if (compare > 0) node = node.right;
             else {
-                lastAccessedNode = node; // сохраняем ссылку на найденный узел
+                lastAccessedNode = node;
                 return node.value;
             }
         }
@@ -64,11 +64,17 @@ public class RedBlackBST<K extends Comparable<K>, V> {
             lastAccessedNode = new Node(key, value, RED);
             return lastAccessedNode;
         }
-        int cmp = key.compareTo(node.key);
-        if (cmp == 0) {
+        int compare;
+        compare = key.compareTo(node.key);
+        compareForInput(node, key, value, compare);
+        return node;
+    }
+
+    private void compareForInput(Node node, K key, V value, int compare) {
+        if (compare == 0) {
             node.value = value;
             lastAccessedNode = node;
-        } else if (cmp < 0) {
+        } else if (compare < 0) {
             node.left = put(node.left, key, value);
             if (isRed(node.left) && isRed(node.left.left)) {
                 node = rotateRight(node);
@@ -87,7 +93,6 @@ public class RedBlackBST<K extends Comparable<K>, V> {
             }
             lastAccessedNode = node.right;
         }
-        return node;
     }
 
 

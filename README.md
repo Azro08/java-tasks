@@ -83,3 +83,9 @@ ____
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/first-task-3.3/src/main/java/redblackbst
 3. Время выполнения "план-факт": план - 4 часа; факт - 8 часов.
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afirst-task-3.3%2Fsrc%2Fmain%2Fjava%2Fredblackbst
+
+### Вторая задача из раздела 3.3 ###
+1. Задача 3.3.30: Программное кеширование. Добавьте в класс RedBlackBST хранение последнего узла, к которому было обращение, в переменной экземпляров, чтобы иметь доступ к этому узлу за постоянное время, если следующая операция put() или get() использует тот же ключ.
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/second-task-3.3/src/main/java/redblackbst
+3. Время выполнения "план-факт": план - 6 часа; факт - 10 часов.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Asecond-task-3.3%2Fsrc%2Fmain%2Fjava%2Fredblackbst
