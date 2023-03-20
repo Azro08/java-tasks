@@ -5,7 +5,7 @@ import edu.princeton.cs.introcs.StdOut;
 public class RedBlackBST<K extends Comparable<K>, V> {
     private static final boolean RED = true;
     private static final boolean BLACK = false;
-    public Node root;
+    private Node root;
     private Node lastAccessedNode;
     private class Node {
         K key;
@@ -19,6 +19,10 @@ public class RedBlackBST<K extends Comparable<K>, V> {
             this.value = value;
             this.color = color;
         }
+    }
+
+    public Node getRoot(){
+        return root;
     }
 
     public boolean contains(K key) {
@@ -106,7 +110,8 @@ public class RedBlackBST<K extends Comparable<K>, V> {
     }
 
     private Node rotateLeft(Node node) {
-        Node rotateNode = node.right;
+        Node rotateNode;
+        rotateNode = node.right;
         node.right = rotateNode.left;
         rotateNode.left = node;
         rotateNode.color = node.color;
@@ -115,7 +120,8 @@ public class RedBlackBST<K extends Comparable<K>, V> {
     }
 
     private Node rotateRight(Node node) {
-        Node rotateNode = node.left;
+        Node rotateNode;
+        rotateNode = node.left;
         node.left = rotateNode.right;
         rotateNode.right = node;
         rotateNode.color = node.color;
