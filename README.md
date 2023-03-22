@@ -89,3 +89,9 @@ ____
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/second-task-3.3/src/main/java/redblackbst
 3. Время выполнения "план-факт": план - 6 часа; факт - 10 часов.
 4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Asecond-task-3.3%2Fsrc%2Fmain%2Fjava%2Fredblackbst
+
+### Третья задача из раздела 3.3 ###
+1. Задача 3.2.10: Нарисуйте красно-черное ДБП, которое получится после вставки ключей E A S Y Q U T I O N в указанном порядке в первоначально пустое дерево.
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/third-task-3.3/src/main/java/redblacktree
+3. Время выполнения "план-факт": план - 1 час; факт - 2 часа 30 мин.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Athird-task-3.3%2Fsrc%2Fmain%2Fjava%2Fredblacktree

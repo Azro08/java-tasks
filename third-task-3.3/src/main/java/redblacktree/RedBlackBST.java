@@ -100,7 +100,7 @@ public class RedBlackBST<K extends Comparable<K>, V> {
 
     public void draw2() {
         if (root == null) {
-            System.out.println("Дерево пустое");
+            StdOut.println("Дерево пустое");
             return;
         }
         draw2(root, "", true);
@@ -115,10 +115,10 @@ public class RedBlackBST<K extends Comparable<K>, V> {
             draw2(node.right, prefix + (isLeft ? "│   " : "    "), false);
         }
 
-        System.out.print(prefix);
-        System.out.print(isLeft ? "└── " : "┌── ");
-        System.out.print(node.key + (node.color == RED ? " (r)" : " (b)"));
-        System.out.print("\n");
+        StdOut.print(prefix);
+        StdOut.print(isLeft ? "└── " : "┌── ");
+        StdOut.print(node.key + (node.color == RED ? " (r)" : " (b)"));
+        StdOut.print("\n");
 
         if (node.left != null) {
             draw2(node.left, prefix + (isLeft ? "    " : "│   "), true);

@@ -112,17 +112,18 @@ public class RedBlackBST<T extends Comparable<T>, V> {
     }
 
 
-    public void add(T key, V val) {
-        root = add(root, key, val);
+    public void add(T key, V value) {
+        root = add(root, key, value);
         root.color = BLACK; // корень всегда черный
     }
 
     private Node add(Node node, T key, V value) {
         if (node == null) return new Node(key, value, RED);
 
-        int cmp = key.compareTo(node.key);
-        if (cmp < 0) node.left = add(node.left, key, value);
-        else if (cmp > 0) node.right = add(node.right, key, value);
+        int compare;
+        compare = key.compareTo(node.key);
+        if (compare < 0) node.left = add(node.left, key, value);
+        else if (compare > 0) node.right = add(node.right, key, value);
         else node.value = value;
 
 
@@ -134,22 +135,23 @@ public class RedBlackBST<T extends Comparable<T>, V> {
     }
 
     private Node rotateLeft(Node node) {
-        Node x = node.right;
-        node.right = x.left;
-        x.left = node;
-        x.color = node.color;
+        Node rotateNode = node.right;
+        node.right = rotateNode.left;
+        rotateNode.left = node;
+        rotateNode.color = node.color;
         node.color = RED;
-        return x;
+        return rotateNode;
     }
 
     private Node rotateRight(Node node) {
-        Node x = node.left;
-        node.left = x.right;
-        x.right = node;
-        x.color = node.color;
+        Node rotateNode = node.left;
+        node.left = rotateNode.right;
+        rotateNode.right = node;
+        rotateNode.color = node.color;
         node.color = RED;
-        return x;
+        return rotateNode;
     }
+
 
     private void flipColors(Node node) {
         node.color = RED;
@@ -161,11 +163,11 @@ public class RedBlackBST<T extends Comparable<T>, V> {
         print(root);
     }
 
-    private void print(Node x) {
-        if (x != null) {
-            print(x.left);
-            StdOut.print(x.key + " ");
-            print(x.right);
+    private void print(Node node) {
+        if (node != null) {
+            print(node.left);
+            StdOut.print(node.key + " ");
+            print(node.right);
         }
     }
 
