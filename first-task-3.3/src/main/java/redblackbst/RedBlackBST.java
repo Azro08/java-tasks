@@ -135,7 +135,8 @@ public class RedBlackBST<T extends Comparable<T>, V> {
     }
 
     private Node rotateLeft(Node node) {
-        Node rotateNode = node.right;
+        Node rotateNode;
+        rotateNode = node.right;
         node.right = rotateNode.left;
         rotateNode.left = node;
         rotateNode.color = node.color;
@@ -144,7 +145,8 @@ public class RedBlackBST<T extends Comparable<T>, V> {
     }
 
     private Node rotateRight(Node node) {
-        Node rotateNode = node.left;
+        Node rotateNode;
+        rotateNode = node.left;
         node.left = rotateNode.right;
         rotateNode.right = node;
         rotateNode.color = node.color;
