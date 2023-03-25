@@ -94,4 +94,10 @@ ____
 1. Задача 3.2.10: Нарисуйте красно-черное ДБП, которое получится после вставки ключей E A S Y Q U T I O N в указанном порядке в первоначально пустое дерево.
 2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/third-task-3.3/src/main/java/redblacktree
 3. Время выполнения "план-факт": план - 1 час; факт - 2 часа 30 мин.
-4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Athird-task-3.3%2Fsrc%2Fmain%2Fjava%2Fredblacktree
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Athird-task-3.3%2Fsrc%2Fmain%2Fjava%2Ftask
+
+### Четвертая задача из раздела 3.3 ###
+1. Задача 3.3.17: Сгенерируйте два случайных красно-черных ДБП из 16 узлов. Начертите их (программно или от руки). Сравните их с (несбалансированными) ДБП, построенными из тех же ключей.
+2. Ссылка на директорию с заданием: https://github.com/Azro08/java-tasks/tree/master/fourth-task-3.3/src/main/java/task
+3. Время выполнения "план-факт": план - 3 час; факт - 7 часов.
+4. Ссылка на sonarcloud: https://sonarcloud.io/code?id=Azro08_java-tasks&selected=Azro08_java-tasks%3Afourth-task-3.3%2Fsrc%2Fmain%2Fjava%2Ftask
